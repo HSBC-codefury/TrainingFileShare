@@ -1,0 +1,12 @@
+create table TENNIS(TOURNAMENT_ID VARCHAR(100), TOURNAMENT_NAME VARCHAR(100),T_DATE INT, MATCH_NUMBER INT, WINNER_NAME VARCHAR(100));
+
+
+
+   
+   
+ CALL SYSCS_UTIL.SYSCS_IMPORT_TABLE (null,'TENNIS','/home/aravind/Downloads/atp_matches_2019.csv', null, null, null, 0);
+ 
+ 
+ SELECT COUNT(*) from TENNIS;
+ 
+ SELECT * from TENNIS;
